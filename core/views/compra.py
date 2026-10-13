@@ -1,7 +1,7 @@
 from rest_framework.viewsets import ModelViewSet
 
 from core.models import Compra
-from core.serializers import CompraCreateUpdateSerializer, CompraSerializer
+from core.serializers import CompraCreateUpdateSerializer, CompraListSerializer, CompraSerializer
 
 class CompraViewSet(ModelViewSet):
     queryset = Compra.objects.order_by("-id")
